@@ -1,10 +1,4 @@
 <?php
-if (isset($_POST['name1'])){
-    $_SESSION['name1'] = $_POST['name1'];
-}
-if (isset($_POST['name2'])){
-    $_SESSION['name2'] = $_POST['name2'];
-}
 if (isset($_POST['choice']) && $name == $_SESSION['name1']) {
     $_SESSION['choice1'] = $_POST['choice'];
 } else if (isset($_POST['choice']) && $name == $_SESSION['name2']) {
