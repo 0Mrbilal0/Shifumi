@@ -4,30 +4,42 @@ namespace Shifumi;
 
 class Players
 {
-    public array $name;
+    public string $name1;
+    public string $name2;
+
     public int $score;
-    public bool $starter;
 
     /**
-     * @param array $name
+     * @param string $name1
+     * @param string $name2
      * @param int $score
-     * @param bool $starter
      */
-    public function __construct(array $name, int $score, bool $starter)
+    public function __construct(string $name1, string $name2, int $score)
     {
-        $this->name = $name;
+        $this->name1 = $name1;
+        $this->name2 = $name2;
         $this->score = $score;
-        $this->starter = $starter;
     }
 
-    public function getName(): array
+    public function getName1(): string
     {
-        return $this->name;
+        return $this->name1;
     }
 
-    public function setName(array $name): Players
+    public function setName1(string $name1): Players
     {
-        $this->name = $name;
+        $this->name1 = $name1;
+        return $this;
+    }
+
+    public function getName2(): string
+    {
+        return $this->name2;
+    }
+
+    public function setName2(string $name2): Players
+    {
+        $this->name2 = $name2;
         return $this;
     }
 
@@ -42,15 +54,6 @@ class Players
         return $this;
     }
 
-    public function isStarter(): bool
-    {
-        return $this->starter;
-    }
 
-    public function setStarter(bool $starter): Players
-    {
-        $this->starter = $starter;
-        return $this;
-    }
 
 }
