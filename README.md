@@ -2,8 +2,6 @@
 
 ## Page
 
-----
-
     - Header
         Logo Shifumi au milieu
         A droite une icone pour les règles
@@ -20,8 +18,6 @@
         Formateur
 
 ## Pseudo Code
-
-----
 
 ```
 Création des classes :
