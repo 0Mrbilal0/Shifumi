@@ -14,10 +14,23 @@
             Choix de [pierre,papier,ciseau] sous forme d'icon pour chacun des choix
         - Section 2
             Les points (Bonus)
-            
-        
-
+    - Footer
+        Nom - Prenom
+        Organisme de formation
+        Formateur
 
 ## Pseudo Code
 
 ----
+
+```
+Création des classes :
+    - Players
+        - Les noms (Joueur 1 && Joueur 2 || Bot)
+        - Les points
+        - Starter aleatoire
+    - Choix
+        - Pierre
+        - Feuille
+        - Ciseaux
+```    
