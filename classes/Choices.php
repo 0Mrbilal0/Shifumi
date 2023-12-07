@@ -11,13 +11,11 @@ class Choices
     /**
      * @param string $choice1
      * @param string $choice2
-     * @param int $state
      */
-    public function __construct(string $choice1, string $choice2, int $state)
+    public function __construct(string $choice1, string $choice2)
     {
         $this->choice1 = $choice1;
         $this->choice2 = $choice2;
-        $this->state = $state;
     }
 
 
@@ -51,6 +49,7 @@ class Choices
     public function setState(int $state): Choices
     {
         $this->state = $state;
+        $_SESSION['state'] = $state;
         return $this;
     }
 
